@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Welcome</title>
+    <link th:href="@{/styles/main.css}" rel="stylesheet" />
+</head>
+<body>
+<h1>Welcome</h1>
+<h2 th:utext="${message}">..!..</h2>
+
+<a th:href="@{/schiffeEintragen}">Spiel beginnen!</a>
+
+</body>
+
+</html>

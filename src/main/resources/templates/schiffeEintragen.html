@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8" />
+        <title>List of simulators</title>
+        <link th:href="@{/styles/main.css}" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Felder</h1>
+        <div>
+            <table>
+<!--                <tr th:each ="Feld : ${meineFelder[0]}">-->
+<!--                    <td th:utext="${Feld.id}">...</td>-->
+<!--                </tr>-->
+                <tr th:each ="Feld : ${meineFelder[0]}">
+                    <td th:utext="${Feld.id}">...</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
